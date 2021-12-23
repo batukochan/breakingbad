@@ -1,0 +1,29 @@
+.my-masonry-grid {
+    display: flex;
+    margin-left: -20px;
+  }
+  .my-masonry-grid_column {
+    border-left: 20px solid transparent;
+    background-clip: padding-box;
+  }
+  
+  /* Style your items */
+  .my-masonry-grid_column > div { /* change div to reference your elements in <masonry> */
+
+    margin-bottom: 20px;
+  }
+  .my-masonry-grid_column > div > a { /* change div to reference your elements in <masonry> */
+    display: block;
+    text-decoration: none;
+    color: rgba(51, 51, 51, 0.815);
+    padding: 20px;
+    background: #ddd;
+
+  }
+  .my-masonry-grid_column > div > a:hover { /* change div to reference your elements in <masonry> */
+    color: #000;
+    background: #eee;
+  }
+  .character{
+      width: 100%;
+  }
