@@ -19,12 +19,11 @@ const HomePage = () => {
         if (status === 'idle') {
             dispatch(fetchCharacters())
         }
-    }, [dispatch,status])
+    }, [dispatch, status])
 
 
     return (
         <>
-            <div style={{ textAlign: 'center' }}>Characters</div>
             {status === 'failed' && <Error error={error} />}
 
             <Masonry
