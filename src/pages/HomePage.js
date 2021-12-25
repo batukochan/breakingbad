@@ -6,6 +6,7 @@ import './style.css'
 import Loading from '../components/Loading'
 import Error from '../components/Error'
 import { Link } from 'react-router-dom'
+import { Button } from 'react-bootstrap'
 
 const HomePage = () => {
     const characters = useSelector(state => state.characters.items)
@@ -43,7 +44,7 @@ const HomePage = () => {
             {status === 'loading' && <Loading type="spin" color="green" />}
 
             {hasNextPage && status !== 'loading' && (<div style={{ padding: "20px 0 40px 0", textAlign: 'center' }}>
-                <button onClick={() => dispatch(fetchCharacters(nextPage))}>Load More {nextPage}</button></div>)}
+            <Button style={{background:'#212529'}} onClick={() => dispatch(fetchCharacters(nextPage))}>Load More</Button></div>)}
 
             {!hasNextPage && <div>There is nothing to be shown</div>}
 

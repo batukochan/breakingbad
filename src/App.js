@@ -11,7 +11,7 @@ function App() {
 
     <Router>
 
-      <Navbar bg="dark" expand="lg" className='mb-3'>
+      <Navbar bg="dark" expand="lg" className='mb-1'>
         <Container>
           <Navbar.Brand href="/">
             <img alt="breakingBad" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Breaking_Bad_logo.svg/1024px-Breaking_Bad_logo.svg.png" width={100}/>
